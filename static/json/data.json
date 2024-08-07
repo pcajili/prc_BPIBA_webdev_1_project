@@ -1,0 +1,44 @@
+{
+    "items": [
+      {
+        "id": 1,
+        "heading": "Jollibee Champ",
+        "rating": "Rating: ★★★★☆ (4/5)",
+        "img_link": "static/images/review/jollibee_champ.png",
+        "date": "August 4, 2024",
+        "description": "<p>From the moment I laid eyes on the Champ at Jollibee, I knew I was in for a treat. The perfectly toasted brioche bun cradled a juicy, medium-cooked beef patty that was bursting with flavor. The melted cheddar cheese draped over the patty like a warm blanket, while crisp lettuce, ripe tomato, and tangy pickles added a refreshing crunch.</p> <p>The only downside was the slightly overwhelming amount of ketchup, which masked some of the beef's natural flavors. However, the overall experience was satisfying, and I would definitely recommend it for anyone craving a traditional burger with a twist. </p>"
+      },
+      {
+        "id": 2,
+        "heading": "Wendy's Baconator Double",
+        "rating": "Rating: ★★★★★ (5/5)",
+        "img_link": "static/images/review/wendys_baconatordouble_solo.png",
+        "date": "August 4, 2024",
+        "description": "<p>If you're a fan of bacon, the Baconator Double at Wendy's is a must-try! This burger features a thick beef patty topped with pepper jack cheese, fresh jalapeños, and a spicy chipotle mayo that packs a punch. The combination of flavors is simply divine, with the heat perfectly balanced by the creaminess of the cheese.</p> <p>The toasted sourdough bun held everything together beautifully, and the side of sweet potato fries complemented the spiciness perfectly. This burger is not for the faint of heart, but for spice lovers, it's an unforgettable experience. </p>"
+      },
+      {
+        "id": 3,
+        "heading": "Mcdonald's Big Mac",
+        "rating": "Rating: ★★★★☆ (4.5/5)",
+        "img_link": "static/images/review/mcdo_bigmac.png",
+        "date": "August 4, 2024",
+        "description": "<p>Finding a delicious burger can be a challenge, but the Big Mac at Mcdonald's exceeded my expectations! Made with a hearty black bean and quinoa patty, this burger was packed with flavor and texture. Topped with avocado, fresh spinach, and a zesty tahini sauce, every bite was a burst of freshness.</p> <p>The whole grain bun was sturdy enough to hold all the toppings without falling apart, which is often a problem with vegan burgers. My only critique would be that it could use a bit more seasoning, but overall, it's a fantastic option for anyone looking to enjoy a plant-based meal without sacrificing taste. </p>"
+      },
+      {
+        "id": 4,
+        "heading": "Burger King Whopper",
+        "rating": "Rating: ★★★★☆ (4/5)",
+        "img_link": "static/images/review/bk_whopper.png",
+        "date": "August 4, 2024",
+        "description": "<p>The Whopper at Burger King is a carnivore's dream come true! This burger features a thick beef patty topped with crispy bacon, smoky BBQ sauce, and onion rings, all nestled in a soft, toasted bun. The combination of the smoky flavors from the BBQ sauce and the crunch of the onion rings created a delightful texture that kept me coming back for more.</p> <p>While the burger was undeniably delicious, it was a bit on the messy side, with sauce dripping everywhere. However, that's part of the fun! If you're looking for a hearty, indulgent burger, this one is sure to satisfy.</p>"
+      },
+      {
+        "id": 5,
+        "heading": "Shake Shack Shackburger",
+        "rating": "Rating: ★★★★★ (5/5)",
+        "img_link": "static/images/review/ss_shackburger.png",
+        "date": "August 4, 2024",
+        "description": "<p>For those who appreciate the finer things in life, the Shackburger at Shake Shack is an absolute must-try! This burger features a succulent beef patty infused with truffle oil, topped with sautéed mushrooms, arugula, and a rich truffle aioli. The flavors meld together beautifully, creating a luxurious experience with every bite.</p> <p>The brioche bun was perfectly soft and buttery, enhancing the overall gourmet feel. Served with a side of hand-cut fries, this burger is worth every penny. If you're looking to treat yourself to something special, don't miss out on this culinary gem! Feel free to use or modify these reviews as you see fit!</p>"
+      }      
+    ]
+  }

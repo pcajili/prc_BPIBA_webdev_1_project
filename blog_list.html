@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog List</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/css/styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="navbar-logo">
+                <a href="index.html"><img src="static/images/burger_logo.png" alt="logo"></a>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="blog_list.html"> Featured </a></li>
+                <li><a href="blog_list.html#list"> Reviews </a></li>
+                <li><a href="about_us.html"> About </a> </li>
+                <li><a href="contact_us.html"> Contact </a></li>
+            </ul>            
+            <div class="search-container"> 
+                <input type="text" id="search" name="search" placeholder="Looking for burgers..." required>
+                <button class="button1" type="button"> Search </button>    
+            </div> 
+            <div class="login-container"> 
+                <a href="login.html"><button class="button1" type="button"> Login </button></a>
+                <a href="about_us.html"><button class="button1" type="button"> Learn More </button></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Blog Post -->
+    <section id="featured">
+        <h1> Discover the Best Burgers </h1>
+
+        <div class="featured-container">
+            <!-- <img src="static/images/review/jollibee_champ.png" class="featured-image"> -->
+            <img src="https://via.placeholder.com/150" class="featured-image">
+
+            <div class="featured-item">
+                <h2>Jollibee Champ</h2>
+                <p>From the moment I laid eyes on the Champ at Jollibee...</p>
+                <a href="#" class="read-more-btn" onclick="openBlogPost(1)">Read More <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- List of Blog Post -->
+    <section id="list" style="padding-top: 50px;">
+        <h1> Hunt for the Perfect Burger</h1>
+        <div class="list-container">
+            <div class="list-card">
+                <img class="list-img" src="static/images/review/jollibee_champ.png">
+                <div class="list-body">
+                    <h3 class="list-title">Jollibee Champ</h3>
+                    <p class="list-text">From the moment I laid eyes on the Champ at Jollibee...</p>
+                    <button class="list-btn" onclick="openBlogPost(1)">Read More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="list-card">
+                <img class="list-img" src="static/images/review/wendys_baconatordouble_solo.png">
+                <div class="list-body">
+                    <h3 class="list-title">Wendy's Baconator Double</h3>
+                    <p class="list-text">If you're a fan of bacon, the Baconator Double at Wendy's...</p>
+                    <button class="list-btn" onclick="openBlogPost(2)">Read More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="list-card">
+                <img class="list-img" src="static/images/review/mcdo_bigmac.png">
+                <div class="list-body">
+                    <h3 class="list-title">Mcdonald's Big Mac</h3>
+                    <p class="list-text">Finding a delicious burger can be a challenge, but the Big Mac...</p>
+                    <button class="list-btn" onclick="openBlogPost(3)">Read More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="list-card">
+                <img class="list-img" src="static/images/review/bk_whopper.png">
+                <div class="list-body">
+                    <h3 class="list-title">Burger King Whopper</h3>
+                    <p class="list-text">The Whopper at Burger King is a carnivore's dream come true...</p>
+                    <button class="list-btn" onclick="openBlogPost(4)">Read More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="list-card">
+                <img class="list-img" src="static/images/review/ss_shackburger.png">
+                <div class="list-body">
+                    <h3 class="list-title">Shake Shack Shackburger</h3>
+                    <p class="list-text">For those who appreciate the finer things in life, the Shackburger...</p>
+                    <button class="list-btn" onclick="openBlogPost(5)">Read More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->   
+    <footer>
+        <div class="footer">
+            <ul class="footer-content icons">
+				<li><a href="http://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a></li>
+				<li><a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+				<li><a href="http://www.x.com"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="mailto:burgerbuster@loremipsum"><i class="fa-solid fa-envelope"></i></a></li>
+			</ul>
+            <ul class="footer-content menu">
+                <li>Patrick Cajili &copy; 2024 </li>
+                <li>All Rights Reserved </li>
+                <li><a href="disclaimer.html">Website Disclaimer</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="static/js/script.js"></script>
+
+</body>
+</html>

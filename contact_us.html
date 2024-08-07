@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/css/styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="navbar-logo">
+                <a href="index.html"><img src="static/images/burger_logo.png" alt="logo"></a>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="blog_list.html"> Featured </a></li>
+                <li><a href="blog_list.html#list"> Reviews </a></li>
+                <li><a href="about_us.html"> About </a> </li>
+                <li><a href="contact_us.html"> Contact </a></li>
+            </ul>            
+            <div class="search-container"> 
+                <input type="text" id="search" name="search" placeholder="Looking for burgers..." required>
+                <button class="button1" type="button"> Search </button>    
+            </div> 
+            <div class="login-container"> 
+                <a href="login.html"><button class="button1" type="button"> Login </button></a>
+                <a href="about_us.html"><button class="button1" type="button"> Learn More </button></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Us Section -->
+    <section>
+        <div class="article-container">
+            <h1 class="article-title"> Contact Us </h1>
+            <div class="cu-content">
+                <div class="cu-content-item">
+                    <h3>Burger Lovers, Unite!</h3>
+                    <p>
+                        Have a burning question about burgers? Want to share your favorite burger spot? We'd love to hear from you! Drop us a line, and let's talk patties.
+                    </p>
+
+                    <h3>Get in Touch</h3>
+                    <ul class="">
+                        <li><i class="fa-solid fa-envelope"></i>Email: burgerbuster@loremipsum</li>
+                        <li><i class="fa-brands fa-instagram"></i>Instagram: @burgerbusterlorem</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cu-content">
+                <div class="cu-content-item">
+                    <h3>Send Us Your Burger Recommendations</h3>
+                    <p>
+                        Know a burger joint that deserves some love? Fill out the form below with the details, and we'll add it to our list of must-try spots!
+                    </p>
+                    <form class="#">
+                        <div class="form-group">
+                            <!-- <label for="name">Name:</label>  -->
+                            <input class="form-control" type="text" id="name" name="name" placeholder="Name" required> 
+                        </div> 
+                        <div class="form-group">
+                            <!-- <label for="email">Email:</label>  -->
+                            <input class="form-control" type="email" id="email" name="email" placeholder="Email" required> 
+                        </div> 
+                        <div class="form-group">
+                            <!-- <label for="restaurant">Restaurant Name:</label>  -->
+                            <input class="form-control" type="text" id="restaurant" name="restaurant" placeholder="Restaurant Name" required> 
+                        </div> 
+                        <div class="form-group">
+                            <!-- <label for="location">Location:</label>  -->
+                            <input class="form-control" type="text" id="location" name="location" placeholder="Location" required> 
+                        </div> 
+                        <div class="form-group">
+                            <!-- <label for="reason">Why We Should Try It:</label> -->
+                            <textarea class="form-control" id="reason" name="reason" rows="5" placeholder="Why We Should Try It" required></textarea> 
+                        </div> 
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+
+                </div>
+
+                <div class="cu-image-content">
+                    <img class="cu-responsive-image" src="static/images/burger_arm_2.png" alt="burger image">
+                </div>
+            </div>
+
+            <h3>Follow Along on Our Burger Adventures</h3>
+            <p>
+                Stay up to date with our latest reviews and burger news by following us on social media:
+            </p>
+            <ul class="">
+				<li><a href="http://www.facebook.com"><i class="fa-brands fa-facebook-f"></i>burgerbusterlorem </a></li>
+				<li><a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i>burgerbusterlorem </a></li>
+				<li><a href="http://www.x.com"><i class="fa-brands fa-twitter"></i>burgerbusterlorem </a></li>
+            </ul>
+            <h3>Join the Conversation</h3>
+            <p>
+                Have a burning question about burgers? Want to share your thoughts on our latest review? Join the discussion in our comments section or reach out to us directly. We can't wait to hear from fellow burger enthusiasts like you!
+            </p>
+            <div class="cu-image-content">
+                <img class="cu-responsive-image" src="static/images/burger_arm_3.png" alt="burger image">
+            </div>            
+        </div>
+    </section>
+
+    <!-- Footer -->   
+    <footer>
+        <div class="footer">
+            <ul class="footer-content icons">
+				<li><a href="http://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a></li>
+				<li><a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+				<li><a href="http://www.x.com"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="mailto:burgerbuster@loremipsum"><i class="fa-solid fa-envelope"></i></a></li>
+			</ul>
+            <ul class="footer-content menu">
+                <li>Patrick Cajili &copy; 2024 </li>
+                <li>All Rights Reserved </li>
+                <li><a href="disclaimer.html">Website Disclaimer</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
