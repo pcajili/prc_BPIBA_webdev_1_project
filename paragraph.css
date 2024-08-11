@@ -1,0 +1,256 @@
+/* ---------- General CSS style ---------- */
+.article-container {
+    max-width: 800px;
+    margin: auto;
+    /* padding: 20px; */
+    padding: 20px 20px 40px 20px;
+    background-color: #e7e7e7;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .article-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .article-title-l {
+        margin-left: 20px;
+    }
+
+        .text-content {
+            flex: 1;
+            margin: 0 20px;
+        }
+            .text-content-item {
+                flex: 1;
+                text-align: justify;
+            }
+                .text-content-item > p {
+                    margin: 0;
+                }
+        
+            /* .text-content-item-l {
+                flex: 1;
+                margin-right: 20px;
+                text-align: justify;
+            }
+                .text-content-item-l > p {
+                    margin: 0;
+                }
+            .text-content-item-r {
+                flex: 1;
+                margin-left: 20px;
+                text-align: justify;
+            }
+                .text-content-item-r > p {
+                    margin: 0;
+                } */
+
+        .image-content {
+            flex: 0 0 40%;                  /* Adjusts the width of the image container */
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+            .image-content-l {
+                flex: 0 0 40%;                  /* Adjusts the image width */
+                padding-left: 20px;
+            }
+            .image-content-r {
+                flex: 0 0 40%;                  /* Adjusts the image width */
+                padding-right: 20px;
+            }
+
+            .responsive-image {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+
+    /* if viewport is less than 840px (small) */
+    @media screen and (max-width: 840px) {
+        .article-title {
+            font-size: 2.2em;
+        }
+
+        .image-content,
+        .image-content-l,
+        .image-content-r {
+            display: block;
+            margin: auto;
+            padding: 0;
+        }
+
+        .image-content,
+        .image-content-l {
+            padding-bottom: 1rem;
+        }
+
+        .image-content,
+        .image-content-r {
+            padding-top: 1rem;
+        }
+
+        .responsive-image {
+            display: block;
+            margin: auto;
+            width: 80%;
+        }
+    }
+
+/* ---------- Page CSS style ---------- */
+
+/* About Us Section CSS in about_us.html */
+.about-us {
+    padding: 50px 50px 50px;
+}
+
+    .au-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* if viewport is less than 840px (small) */
+    @media screen and (max-width: 840px) {
+        .about-us {
+            padding: 50px 30px 50px;
+        }
+
+        .au-content {
+            display: block;
+        }
+    }
+
+
+/* Contact Us Section CSS in contact_us.html */
+
+.contact-us {
+    padding: 50px 50px 50px;
+}
+
+    .cu-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+        /* .cu-text-content {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .cu-text-content h3 {
+            margin-top: 0;
+        }
+        .cu-text-content p {
+            text-align: justify;
+            margin-bottom: 15px;
+        } */
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+    font-family: Arial, sans-serif;
+}
+
+.form-group .form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn {
+    background-color: #007bff;
+    color: #e7e7e7;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+    /* if viewport is less than 840px (small) */
+    @media screen and (max-width: 840px) {
+        .contact-us {
+            padding: 50px 30px 50px;
+        }
+
+        .cu-content {
+            display: block;
+        }
+    }
+
+
+/*
+
+.content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.text {
+    flex: 1;
+    margin-right: 20px; /* Space between text and image 
+}
+
+.image-wrapper {
+    width: 300px; /* Set a fixed width for the square wrapping 
+    height: 300px; /* Set a fixed height for the square wrapping 
+    overflow: hidden; /* Hide overflow to maintain square shape 
+    position: relative; /* Position relative for absolute positioning of the image 
+}
+
+.responsive-image {
+    position: absolute; /* Position the image absolutely within the wrapper 
+    top: 50%; /* Center the image vertically 
+    left: 50%; /* Center the image horizontally 
+    width: auto; /* Maintain aspect ratio 
+    height: 100%; /* Fill the height of the wrapper 
+    min-width: 100%; /* Ensure the image covers the wrapper 
+    min-height: 100%; /* Ensure the image covers the wrapper 
+    transform: translate(-50%, -50%); /* Center the image 
+}
+
+
+*/
+
+
+/* Disclaimer Section CSS in disclaimer.html */
+.disclaimer {
+    padding: 50px 50px 50px;
+}
+
+    /* if viewport is less than 840px (small) */
+    @media screen and (max-width: 840px) {
+        .disclaimer {
+            padding: 50px 30px 50px;
+        }
+    }
+
+
+/* Login Section CSS in login.html */
+.log--in {
+    padding: 50px 100px 50px;
+    max-width: 350px;
+    margin: auto;
+}
