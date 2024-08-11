@@ -161,15 +161,6 @@ body {
             }
     }
 
-
-
-
-
-
-
-
-
-
 /* Footer */
 .footer {
     background-color: var(--color1);
@@ -251,6 +242,7 @@ body {
                 margin: auto;
                 line-height: 1.75em;
                 font-size: 0.95em;
+                border: none;
             }
     }
 
@@ -348,6 +340,10 @@ button.button1 {
 
     /* if viewport is less than 840px (small) */
     @media screen and (max-width: 840px) {
+        .headline {
+            padding: 50px 30px 50px;
+        }
+
         .headline .headline-container {
             display: block;
         }
@@ -355,9 +351,20 @@ button.button1 {
             padding: 0 2em;
         }
 
+            .headline .headline-container .headline-text h1 {
+                /* font-size: 48px; */
+                font-size: 2.2em;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            .headline .headline-container .headline-text p {
+                /* font-size: 24px; */
+                font-size: 1rem;
+                line-height: 1.5;
+            }
         .headline .headline-container .headline-image img {
             display: block;
-            max-width: 50%;
+            max-width: 80%;
             margin: auto;
         }
     }
@@ -368,6 +375,17 @@ button.button1 {
     margin: 10px 0;
 }
 
+    /* if viewport is less than 840px (small) */
+    @media screen and (max-width: 840px) {
+        .subscribe-container {
+            padding: 60px 30px 60px 30px;        
+        }
+
+        .subscribe-container .button1 {
+            margin: auto;
+            margin-top: 1.2rem;
+        }
+    }
 
 /* FAQ Section CSS in index.html */
 .faq {
@@ -447,3 +465,9 @@ button.button1 {
                 margin-top: 30px;
             }
 
+    /* if viewport is less than 840px (small) */
+    @media screen and (max-width: 840px) {
+        .faq {
+            padding: 70px 30px 50px;
+        }
+    }

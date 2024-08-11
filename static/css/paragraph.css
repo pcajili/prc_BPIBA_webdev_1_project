@@ -68,6 +68,36 @@
                 border-radius: 8px;
             }
 
+    /* if viewport is less than 840px (small) */
+    @media screen and (max-width: 840px) {
+        .article-title {
+            font-size: 2.2em;
+        }
+
+        .image-content,
+        .image-content-l,
+        .image-content-r {
+            display: block;
+            margin: auto;
+            padding: 0;
+        }
+
+        .image-content,
+        .image-content-l {
+            padding-bottom: 1rem;
+        }
+
+        .image-content,
+        .image-content-r {
+            padding-top: 1rem;
+        }
+
+        .responsive-image {
+            display: block;
+            margin: auto;
+            width: 80%;
+        }
+    }
 
 /* ---------- Page CSS style ---------- */
 
@@ -81,6 +111,18 @@
         flex-direction: row;
         justify-content: space-between;
     }
+
+    /* if viewport is less than 840px (small) */
+    @media screen and (max-width: 840px) {
+        .about-us {
+            padding: 50px 30px 50px;
+        }
+
+        .au-content {
+            display: block;
+        }
+    }
+
 
 /* Contact Us Section CSS in contact_us.html */
 
@@ -147,6 +189,17 @@
     background-color: #0056b3;
 }
 
+    /* if viewport is less than 840px (small) */
+    @media screen and (max-width: 840px) {
+        .contact-us {
+            padding: 50px 30px 50px;
+        }
+
+        .cu-content {
+            display: block;
+        }
+    }
+
 
 /*
 
@@ -186,6 +239,14 @@
 .disclaimer {
     padding: 50px 50px 50px;
 }
+
+    /* if viewport is less than 840px (small) */
+    @media screen and (max-width: 840px) {
+        .disclaimer {
+            padding: 50px 30px 50px;
+        }
+    }
+
 
 /* Login Section CSS in login.html */
 .log--in {
