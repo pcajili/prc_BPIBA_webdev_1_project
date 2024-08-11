@@ -20,7 +20,7 @@ body {
     border: 0;
     box-sizing: border-box;
     padding-top: 50px;                               /* gap for navbar */
-    background-image: url(../static/images/bg2-white.png);     
+    background-image: url(../../static/images/bg2-white.png);     
     background-attachment: fixed;
 }
 
