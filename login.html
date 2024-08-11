@@ -9,64 +9,103 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <!-- Header/Navbar -->
-    <header class="#">
-        <div>
-            <ul class="">
-                <li><a href="index.html"><img src="static/images/burger_logo.png" alt="logo"></a>
+    <header>
+        <div class="navbar">
+            <div class="navbar-logo">
+                <a href="index.html"><img src="static/images/burger_logo.png" alt="logo"></a>
+            </div>
+            <ul class="navbar-menu">
                 <li><a href="index.html"> Home </a></li>
                 <li><a href="blog_list.html"> Featured </a></li>
                 <li><a href="blog_list.html#list"> Reviews </a></li>
                 <li><a href="about_us.html"> About </a> </li>
                 <li><a href="contact_us.html"> Contact </a></li>
             </ul>            
-            <div> 
+            <div class="search-container"> 
                 <input type="text" id="search" name="search" placeholder="Looking for burgers..." required>
-                <button type="button"> Search </button>    
+                <button class="button1" type="button"> Search </button>    
             </div> 
-            <button type="button"> Login </button>
-            <button type="button"> Learn More </button>
+            <div class="login-container"> 
+                <a href="login.html"><button class="button1" type="button"> Login </button></a>
+                <a href="about_us.html"><button class="button1" type="button"> Learn More </button></a>
+            </div>
         </div>
     </header>
-    <hr>
 
     <!-- Sign Up/Login -->
-    <section>
-        <!-- Sign Up -->
-        <div>
-            <h2>Sign Up</h2>
-            <input type="email" id="signup-email" placeholder="Email" required>
-            <input type="password" id="signup-password" placeholder="Password" required>
-            <button>Sign Up</button>
-            <p>
-                Already have an account? <a href="#">Login</a>
-            </p>
-        </div>
+    <section class="log--in">
+        <div class="article-container lighter">
+            <!-- Sign Up -->
+            <div class="content">
+                <div class="text-content">
+                    <h2>Sign Up</h2>
+                    <div class="text-content-item">
+                        <input type="email" id="signup-email" placeholder="Email" required>
+                    </div>
+                    <div class="text-content-item">
+                        <input type="password" id="signup-password" placeholder="Password" required>
+                    </div>
+                    <div class="text-content-item">
+                        <button>Sign Up</button>
+                    </div>
+                    <div class="text-content-item">
+                        <p>
+                            Already have an account? <a href="#">Login</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Login -->
-        <div>
-            <h2>Login</h2>
-            <input type="email" id="login-email" placeholder="Email" required>
-            <input type="password" id="signup-password" placeholder="Password" required>
-            <button>Login</button>
-            <p>
-                Don't have an account? <a href="#">Sign Up</a>
-            </p>
+            <!-- Login -->
+            <div class="content">
+                <div class="text-content">
+                    <h2>Login</h2>
+                    <div class="text-content-item">
+                        <input type="email" id="login-email" placeholder="Email" required>
+                    </div>
+                    <div class="text-content-item">
+                        <input type="password" id="signup-password" placeholder="Password" required>
+                    </div>
+                    <div class="text-content-item">
+                        <button>Login</button>
+                        <a href="#"> Forgot password? </a>
+                    </div>
+                    <div class="text-content-item">
+                        <p>
+                            Don't have an account? <a href="#">Sign Up</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Password Reset -->
+            <div class="content">
+                <div class="text-content">
+                    <h2>Reset Password</h2>
+                    <div class="text-content-item">
+                        <input type="email" id="login-email" placeholder="Email" required>
+                    </div>
+                    <div class="text-content-item">
+                        <button>Reset Password</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <hr>
     
     <!-- Footer -->   
-    <footer class="footer">
-        <div>
-            <ul class="">
-				<li><a href="http://www.facebook.com" class="">Facebook</a></li>
-				<li><a href="http://www.instagram.com" class="">Instagram</a></li>
-				<li><a href="http://www.x.com" class="">Twitter</a></li>
-                <li><a href="mailto:burgerbuster@loremipsum" class="">Email</a></li>
+    <footer>
+        <div class="footer">
+            <ul class="footer-content icons">
+				<li><a href="http://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a></li>
+				<li><a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+				<li><a href="http://www.x.com"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="mailto:burgerbuster@loremipsum"><i class="fa-solid fa-envelope"></i></a></li>
 			</ul>
-            <ul class="">
+            <ul class="footer-content menu">
                 <li>Patrick Cajili &copy; 2024 </li>
                 <li>All Rights Reserved </li>
                 <li><a href="disclaimer.html">Website Disclaimer</a></li>
@@ -75,6 +114,4 @@
     </footer>
 
 </body>
-</body>
-
 </html>

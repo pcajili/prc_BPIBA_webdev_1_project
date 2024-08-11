@@ -1,82 +1,110 @@
+/* ---------- General CSS style ---------- */
 .article-container {
     max-width: 800px;
     margin: auto;
-    padding: 20px;
-    background-color: white;
+    /* padding: 20px; */
+    padding: 20px 20px 40px 20px;
+    background-color: #e7e7e7;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.article-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    .article-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .article-title-l {
+        margin-left: 20px;
+    }
+
+        .text-content {
+            flex: 1;
+            margin: 0 20px;
+        }
+            .text-content-item {
+                flex: 1;
+                text-align: justify;
+            }
+                .text-content-item > p {
+                    margin: 0;
+                }
+        
+            /* .text-content-item-l {
+                flex: 1;
+                margin-right: 20px;
+                text-align: justify;
+            }
+                .text-content-item-l > p {
+                    margin: 0;
+                }
+            .text-content-item-r {
+                flex: 1;
+                margin-left: 20px;
+                text-align: justify;
+            }
+                .text-content-item-r > p {
+                    margin: 0;
+                } */
+
+        .image-content {
+            flex: 0 0 40%;                  /* Adjusts the width of the image container */
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+            .image-content-l {
+                flex: 0 0 40%;                  /* Adjusts the image width */
+                padding-left: 20px;
+            }
+            .image-content-r {
+                flex: 0 0 40%;                  /* Adjusts the image width */
+                padding-right: 20px;
+            }
+
+            .responsive-image {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+
+
+/* ---------- Page CSS style ---------- */
+
+/* About Us Section CSS in about_us.html */
+.about-us {
+    padding: 50px 50px 50px;
 }
 
-.content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    .au-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+/* Contact Us Section CSS in contact_us.html */
+
+.contact-us {
+    padding: 50px 50px 50px;
 }
 
-.text-content {
-    flex: 1;
-    text-align: justify;
-}
-.text-content-l {
-    flex: 1;
-    margin-right: 20px;
-    text-align: justify;
-}
+    .cu-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 
-.text-content-r {
-    flex: 1;
-    margin-left: 20px;
-    text-align: justify;
-}
-
-.image-content {
-    flex: 0 0 40%; /* Adjusts the image width */
-}
-
-.responsive-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-
-
-
-.cu-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.cu-content-item {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.cu-content-item h3 {
-    margin-top: 0;
-}
-
-.cu-content-item p {
-    text-align: justify;
-    margin-bottom: 15px;
-}
-
-.cu-image-content {
-    flex: 0 0 40%; /* Adjusts the width of the image container */
-}
-
-.cu-responsive-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
+        /* .cu-text-content {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .cu-text-content h3 {
+            margin-top: 0;
+        }
+        .cu-text-content p {
+            text-align: justify;
+            margin-bottom: 15px;
+        } */
 
 .form-group {
     margin-bottom: 15px;
@@ -106,7 +134,7 @@
 
 .btn {
     background-color: #007bff;
-    color: white;
+    color: #e7e7e7;
     border: none;
     padding: 10px 15px;
     border-radius: 4px;
@@ -152,3 +180,16 @@
 
 
 */
+
+
+/* Disclaimer Section CSS in disclaimer.html */
+.disclaimer {
+    padding: 50px 50px 50px;
+}
+
+/* Login Section CSS in login.html */
+.log--in {
+    padding: 50px 100px 50px;
+    max-width: 350px;
+    margin: auto;
+}

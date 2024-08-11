@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title of Blog Post/Entry</title>
+    <title id="item-pagetitle"></title>
     <!-- CSS -->
     <link rel="stylesheet" href="static/css/styles.css">
     <!-- Font Awesome -->
@@ -37,24 +37,37 @@
     
 
     <!-- Blog Post #n -->  
-    <section class="">
-        <div class="output">
-            <h1 id="item-heading"></h1>
-            <h3 id="item-rating"></h3>
-            <img id="item-img" src="" alt="">
-            <div>
-                posted on <time id="item-date"></time>
+
+    <!-- test values , blog entry, text-content, image-content-->
+    <section class="blog-post">
+        <div class="article-container lighter">             <!-- output -->
+            <div class="bp-content">
+                <div class="text-content">
+                    <h1 id="item-heading" class="#"></h1>
+                    <h3 id="item-rating"></h3>
+                    <div>
+                        posted on <time id="item-date"></time>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/"><button class="bp-btn">
+                            <i class="fa-brands fa-facebook-f"></i> Share
+                        </button></a>
+                        <a href="https://twitter.com/"><button class="bp-btn">
+                            <i class="fa-brands fa-x-twitter"></i> Tweet
+                        </button></a>
+                    </div>
+                </div>
+                <div class="image-content">
+                    <img class="responsive-image bp-image" id="item-img" src="" alt="">
+                </div> 
             </div>
-
-            <div>
-                <a href="https://www.facebook.com/">Share</a>
-                <a href="https://twitter.com/">Tweet</a>
+            <div class="bp-content">
+                <div class="text-content">
+                    <div class="text-content-item" id="item-description"></div>                    
+                </div>
             </div>
-            <div id="item-description"></div>
-
-            <a href="blog_list.html"><button type="button"> Other Burger Reviews</button></a>
-            <a href="contact_us.html"><button type="button"> Contact Us</button></a>
-
+            <a href="blog_list.html"><button type="button" class="button1"> Other Burger Reviews</button></a>
+            <a href="contact_us.html"><button type="button" class="button1"> Contact Us</button></a>
         </div>
     </section>
 

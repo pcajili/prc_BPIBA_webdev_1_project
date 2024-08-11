@@ -6,17 +6,19 @@ function openBlogPost(itemData) {
 document.addEventListener('DOMContentLoaded', function() {
     const itemId = JSON.parse(localStorage.getItem('selectedItemId'));      // retrieve data
     if (itemId) {
-        fetch('static/json/data.json')
+        fetch('database/json/data.json')
             .then(response => response.json())
             .then(data => {
                 const item = data.items.find(item => item.id === itemId);   // find itemId in array item
                 if (item) {
+                    document.getElementById('item-pagetitle').innerText = item.heading;
                     document.getElementById('item-heading').innerText = item.heading;
                     document.getElementById('item-rating').innerText = item.rating;
                     document.getElementById('item-img').src = item.img_link;
                     document.getElementById('item-date').innerText = item.date;
                     document.getElementById('item-description').innerHTML = item.description;
                 } else {
+                    document.getElementById('item-pagetitle').innerText = 'Item not found';
                     document.getElementById('item-heading').innerText = 'Item not found';
                     document.getElementById('item-rating').innerText = '';
                     document.getElementById('item-img').src = '';
@@ -28,3 +30,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     // localStorage.removeItem('selectedItemId');                               // Clear data after use
 });
+
